@@ -5,11 +5,13 @@ on:
     branches: [ "main" ]
     paths:
       - 'Dockerfile'
+      - 'docker-build'
       - '**/docker/**'
   pull_request:
     branches: [ "main" ]
     paths:
       - 'Dockerfile'
+      - 'docker-build'
       - '**/docker/**'
 
 jobs:

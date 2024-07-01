@@ -18,26 +18,6 @@ app.get("/api/AllStock", DataService.getDataTable);
 app.post("/api/SellProduct", UpdateService.SellProduct);
 app.post("/api/AddProductToStock", UpdateService.AddProductToStock);
 
-app.get('/api/ip', (req, res) => {
-  try {
-    const networkInterfaces = os.networkInterfaces();
-    let ipAddress;
-
-    for (const name of Object.keys(networkInterfaces)) {
-      for (const net of networkInterfaces[name]) {
-        if (net.family === 'IPv4' && !net.internal) {
-          ipAddress = net.address;
-          break;
-        }
-      }
-    }
-
-    res.status(200).json({ ipAddress });
-  } catch (error) {
-    console.error("Error ", error.message);
-    res.status(500).json({ error });
-  }
-});
 
 app.get('/get-ip', (req, res) => {
   const clientIp = req.connection.remoteAddress;
