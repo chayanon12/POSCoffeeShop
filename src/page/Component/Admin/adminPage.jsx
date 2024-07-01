@@ -6,6 +6,7 @@ const AdminPage = () => {
     <div>
       <AppBar />
       <DisplayStockTable />
+      <h1>Pond</h1>
     </div>
   );
 };
