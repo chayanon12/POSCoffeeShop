@@ -6,7 +6,7 @@ const AdminPage = () => {
     <div>
       <AppBar />
       <DisplayStockTable />
-      <h1>Pon2d</h1>
+      <h1>Pon2d22</h1>
     </div>
   );
 };
