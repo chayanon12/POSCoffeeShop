@@ -33,4 +33,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/new_auto_push:v2
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/new_auto_push:v3
